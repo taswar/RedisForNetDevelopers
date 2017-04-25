@@ -1,0 +1,4 @@
+Source Code for Blog Post on Redis for .NET Developers
+- Describes Pipeline and Batching in Redis with C# using a console app.
+- To read the content please visit
+http://taswar.zeytinsoft.com/redis-pipeline-batching/
