@@ -18,8 +18,8 @@ namespace RedisPubSub
             LazyConnection = new Lazy<ConnectionMultiplexer>(() => ConnectionMultiplexer.Connect(configurationOptions));
         }
 
-        public static ConnectionMultiplexer Connection => LazyConnection.Value;
+        public static ConnectionMultiplexer Connection = LazyConnection.Value;
 
-        public static IDatabase RedisCache => Connection.GetDatabase();
+        public static IDatabase RedisCache = Connection.GetDatabase();
     }
 }
